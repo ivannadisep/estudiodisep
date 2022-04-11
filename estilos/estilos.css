@@ -12,7 +12,8 @@ body{
  
 
 .encabezado{
-    background: rgb(163, 169, 181);
+    background: rgb(255,255,255);
+    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +74,8 @@ body{
 }
  
 .piepagina{
-    background: rgb(163, 169, 181);
+    background: rgb(255,255,255);
+    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
     font-size: 20px;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -120,9 +122,6 @@ body{
     text-align: center;
 }
  
-.imgpri{
-    padding-top: 25px;
-}
  
 .principal__titulo{
     font-size: 60px;
@@ -140,6 +139,46 @@ body{
     padding-bottom: 30px;
 }
  
+.slider{
+    width: 45%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5%;
+}
+ 
+.slider ul{
+    padding: 0%;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+ 
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+ 
+.slider img{
+    width: 100%;
+}
+ 
+@keyframes cambio{
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+ 
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+ 
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+ 
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+ 
+
+
 .contenedor1{
     display: flex;
     flex-direction: column;
