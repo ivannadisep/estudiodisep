@@ -6,61 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/ACCF749B-BA8A-40F6-AA68-109296FC54BA.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/03884f9323.js" crossorigin="anonymous"></script>
 </head>
- 
- 
+
+
 <body class="body">
- 
-    <div class="containergrid1">
- 
-        <header class="encabezado">
-            <div class="encabezado__logo">
+
+    <div class="container-fluid">
+
+        <header class="row encabezado">
+            <div class="col-12 encabezado__logo">
                 <a href="index.html"><img src="multimedia/ACCF749B-BA8A-40F6-AA68-109296FC54BA.png"
                         class="encabezado__logo" alt=""></a>
             </div>
- 
-            <div class="titulomenu">
+
+            <div class=" col-12 titulomenu">
                 <h1 class="encabezado__titulo">Estudio Juridico D'Isep </h1>
- 
-                <nav class="encabezado__menu">
-                    <ul class="encabezado__menu--nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="paginas/servicios.html">Servicios</a>
-                            <ul class="encabezado__submenu">
-                                <li><a href="paginas/servicios.html"></a>Comercial y laboral</li>
-                                <li><a href="paginas/servicios.html"></a>Civil</li>
-                                <li><a href="paginas/servicios.html"></a>Familia</li>
-                                <li><a href="paginas/servicios.html"></a>Sucesiones</li>
+
+                <nav class="navbar navbar-light navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">MENU</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/contactanos.html">CONTACTANOS</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="paginas/servicios.html"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        SERVICIOS </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="paginas/servicios.html">COMERCIAL Y
+                                                LABORAL</a></li>
+                                        <li><a class="dropdown-item" href="paginas/servicios.html">CIVIL</a></li>
+                                        <li><a class="dropdown-item" href="paginas/servicios.html">FAMILIA</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/sobre-nosotros.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/faq.html">FAQ</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li><a href="paginas/sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="paginas/contactanos.html">Contactanos</a></li>
-                        <li><a href="paginas/faq.html">FAQ</a></li>
-                    </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
- 
-        <div class="principalgrid">
-            <main class="principal">
-               
-                <div class="slider">
-                    <ul>
-                        <li><img src="../Index/multimedia/slider1.jpg" alt=""></li>
-                        <li><img src="../Index/multimedia/slider2.jpeg" alt=""></li>
-                        <li><img src="../Index/multimedia/slider3.jpeg" alt=""></li>
-                        <li><img src="../Index/multimedia/slider4.jpeg" alt=""></li>
-                    </ul>
-                </div>
 
- 
- 
-                <div class="principal__texto">
+        <div class="principalgrid row">
+            <main class="principal">
+
+
+
+                <div id="carouselExampleIndicators" class="col-4 carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="multimedia/slider1.jpg" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/slider2.jpeg" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/slider4.jpeg" class="d-block w-80" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+
+                <div class=" col-10 principal__texto">
                     <h2 class="principal__titulo">Nosotros</h2>
                     <p class="principal__parrafo">Somos un equipo de abogados altamente especializados en Derecho
                         Laboral y
@@ -81,63 +133,69 @@
                         caso
                     </p>
                 </div>
- 
- 
+
+
                 <section>
- 
-                    <span class="contenedor1">
-                        <h2 class="principal__titulos1"> Atención personalizada </h2>
-                        <p class="principal__parrafos">Cuando nuestros clientes se acercan a consultarnos entendemos que
-                            los atraviesa
-                            el miedo, la ansiedad y
-                            la incertidumbre. Nuestra intervención no solo aborda resolver de la mejor forma los casos
-                            de nuestros
-                            clientes, sino también empatizar con la persona, entender su situación personal y encontrar
-                            la                             mejor
-                            solución. Tenemos una total confidencialidad. Mantenemos una atención permanente vía
-                            WhatsApp y                             correo              electrónico.</p>
-                    </span>
- 
-                    <span class="contenedor2">
-                        <h2 class="principal__titulos2">Areas especializadas</h2>
-                        <p class="principal__parrafos">Somos un grupo familiar, que desde hace 30 años nos dedicamos a
-                            dar
-                            solucion a
-                            tus problemas juridicos.
-                            Nuestras areas de especialidad son familia, civil y laboral.</p>
-                    </span>
- 
-                    <span class="contenedor3">
-                        <h2 class="principal__titulos3">Consultas</h2>
-                        <p class="principal__parrafos">En una consulta nos encargamos de analizar e interiorizamos con
-                            todos
-                            los
-                            detalles de tu caso, escuchamos
-                            tu situación y evaluamos la mejor solución para vos. Vamos a informarte cuáles son los pasos
-                            a
-                            seguir.
-                            Evacuamos tus dudas y elaboramos un plan estratégico para comenzar a trabajar en tu caso
-                            desde
-                            el minuto
-                            en que te contactás con nosotros. Los honorarios serán acordados con cada cliente en la
-                            primera
-                            consulta, ofreciendo facilidades de pago.</p>
-                    </span>
- 
+                    <div class=" col-10 pagprincipal">
+                        <span class="contenedor1">
+                            <h2 class="principal__titulos1"> Atención personalizada </h2>
+                            <p class="principal__parrafos">Cuando nuestros clientes se acercan a consultarnos entendemos
+                                que
+                                los atraviesa
+                                el miedo, la ansiedad y
+                                la incertidumbre. Nuestra intervención no solo aborda resolver de la mejor forma los
+                                casos
+                                de nuestros
+                                clientes, sino también empatizar con la persona, entender su situación personal y
+                                encontrar
+                                la mejor
+                                solución. Tenemos una total confidencialidad. Mantenemos una atención permanente vía
+                                WhatsApp y correo electrónico.</p>
+                        </span>
+
+                        <span class="contenedor2">
+                            <h2 class="principal__titulos2">Areas especializadas</h2>
+                            <p class="principal__parrafos">Somos un grupo familiar, que desde hace 30 años nos dedicamos
+                                a
+                                dar
+                                solucion a
+                                tus problemas juridicos.
+                                Nuestras areas de especialidad son familia, civil y laboral.</p>
+                        </span>
+
+                        <span class="contenedor3">
+                            <h2 class="principal__titulos3">Consultas</h2>
+                            <p class="principal__parrafos">En una consulta nos encargamos de analizar e interiorizamos
+                                con
+                                todos
+                                los
+                                detalles de tu caso, escuchamos
+                                tu situación y evaluamos la mejor solución para vos. Vamos a informarte cuáles son los
+                                pasos
+                                a
+                                seguir.
+                                Evacuamos tus dudas y elaboramos un plan estratégico para comenzar a trabajar en tu caso
+                                desde
+                                el minuto
+                                en que te contactás con nosotros. Los honorarios serán acordados con cada cliente en la
+                                primera
+                                consulta, ofreciendo facilidades de pago.</p>
+                        </span>
+                    </div>
                 </section>
             </main>
         </div>
- 
-        <footer class="piepagina">
-            <span class="piepagina__redes">
+
+        <footer class="row piepagina">
+            <span class="col-3 piepagina__redes">
                 <h3 class="piepagina__redes--titulo">Nuestras redes</h3>
                 <div><a href="https://instagram.com/estudiojuridicodisep?utm_medium=copy_link"><i
                             class="fa-brands fa-instagram"></i>Instagram</a></div>
                 <div><a href="https://www.facebook.com/EstudioJuridicoDisep"><i
                             class="fa-brands fa-facebook"></i>Facebook</a></div>
             </span>
- 
-            <span class="piepagina__contacto">
+
+            <span class="col-3 piepagina__contacto">
                 <h3 class="piepagina__contacto--titulos">Contacto</h3>
                 <div><i class="fa-solid fa-location-dot"></i>Tucuman 149, Planta Baja, Oficina 8</div>
                 <div><i class="fa-solid fa-phone"></i>+54 9 351 3034461</div>
@@ -145,8 +203,8 @@
             </span>
         </footer>
     </div>
- 
- 
+
+
 </body>
- 
+
 </html>

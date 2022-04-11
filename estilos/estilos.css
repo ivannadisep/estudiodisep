@@ -22,9 +22,9 @@ body{
  
 .encabezado__logo{
     display: flex;
+    justify-content: center;
     padding: 15px  20px 30px 0px;
     height: 140px;
-    margin-left: 100px;
 }
  
 .titulomenu{
@@ -33,6 +33,7 @@ body{
     flex-wrap: wrap;   
     font-family: 'Noto Serif', serif;
     padding-bottom: 20px;
+    align-items: center;
     display: flex;
 }
 
@@ -89,7 +90,7 @@ body{
  
 /*         INDEX CODIGO         */
  
-/*GRIDS*/
+/*GRIDS
  
 .containergrid1 {
     display: grid;
@@ -110,7 +111,7 @@ body{
  
 .piepagina{
     grid-area: piepagina;
-}
+}*/
  
 /*    CODIGO  INDEX    */  
  
@@ -120,6 +121,8 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
  
  
@@ -139,6 +142,18 @@ body{
     padding-bottom: 30px;
 }
  
+.pagprincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 10px;
+}
+
+.carousel{
+    padding-top: 30px;
+}
+
 .slider{
     width: 45%;
     margin: auto;
@@ -185,7 +200,7 @@ body{
     border-left: solid;
     border-top: solid;
     height: 60%;
-    width: 60%;
+    width: 70%;
     padding: 20px 20px 50px 50px;
     margin-left: 50px;
 }
@@ -196,9 +211,9 @@ body{
     border-right: solid;
     border-top: solid;
     height: 60%;
-    width: 60%;
+    width: 70%;
     padding: 20px 20px 50px 50px;
-    margin-left: 200px;  
+    margin-left: 400px;  
 }
  
 .contenedor3{
@@ -207,7 +222,7 @@ body{
     border-left: solid;
     border-top: solid;
     height: 60%;
-    width: 60%;
+    width: 70%;
     padding: 20px 20px 50px 50px;
     margin-left: 50px;
 }
