@@ -183,27 +183,7 @@ body{
 /*    MEDIA QUERIES  INDEX  TAMANO TABLET    */
  
 @media screen and (max-width:768px)  {
-    .containergrid1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "encabezado encabezado encabezado"
-        "grid grid grid"
-        "piepagina piepagina piepagina"
-    }
-     
-    .encabezado{
-        grid-area: encabezado;
-    }
-    
-    .principalgrid{
-        grid-area: grid;
-    }
-     
-    .piepagina{
-        grid-area: piepagina;
-    }
-    
+        
     .carousel{
         display: none;
     }
@@ -262,28 +242,7 @@ body{
 /*     MEDIA QUERIES       INDEX   TAMANO    CELULAR*/
  
 @media screen and (max-width:425px) {
-    .containergrid1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-        "encabezado"
-        "grid"
-        "piepagina"
-    }
-   
-    .encabezado{
-        grid-area: encabezado;
-    }
-     
-    .principalgrid{
-        grid-area: grid;
-    }
-     
-    .piepagina{
-        grid-area: piepagina;  
-        font-size: 15px;
-    }
+    
  
     .encabezado{
         height: 250px;
@@ -458,57 +417,37 @@ body{
     font-size: 20px;
     font-weight: bolder;
 }
- 
- 
-/*    GRIDS SERVICIOS     */
- 
-.containergrid2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-    "encabezado encabezado encabezado encabezado"
-    "servicios servicios servicios servicios"
-    "piepagina piepagina piepagina piepagina";
-}
-     
-.encabezado{
-    grid-area: encabezado;
-}
-     
-.cuerposervicios{
-    grid-area: servicios;
-    grid-column: 1 / 5;
-}
-     
-.piepagina{
-    grid-area: piepagina;
-}
+
  
 /*MEDIA QUERIES DE SERVICIOS TAMANO TABLET*/
  
 @media screen and (max-width:768px) {
-    .containergrid2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-        "encabezado encabezado encabezado"
-        "servicios servicios servicios"
-        "piepagina piepagina piepagina";
+    .contenedor__serv--civ{
+    height: 60%;
+    width: 40%;
+    padding: 5px 5px;
+    text-align: center;
     }
-         
-    .encabezado{
-        grid-area: encabezado;
+
+    .contenedor__serv--comerc{
+    height: 60%;
+    width: 40%;
+    padding: 5px 5px;
+    text-align: center;   
     }
-         
-    .cuerposervicios{
-        grid-area: servicios;
-        grid-column: 1 / 4;
+
+    .contenedor__serv--flia{
+    height: 60%;
+    width: 40%;
+    padding: 5px 5px;
+    text-align: center;       
     }
-         
-    .piepagina{
-        grid-area: piepagina;
+
+    .contenedor__serv--suces{
+    height: 60%;
+    width: 40%;
+    padding: 5px 5px;
+    text-align: center;   
     }
 
 }
@@ -516,28 +455,7 @@ body{
 /*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR*/
  
 @media screen and (max-width:425px) {
-    .containergrid2{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "encabezado"
-        "servicios"
-        "piepagina";
-    }
-         
-    .encabezado{
-        grid-area: encabezado;
-    }
-         
-    .cuerposervicios{
-        grid-area: servicios;
-        grid-column: 1 / 2;
-    }
-         
-    .piepagina{
-        grid-area: piepagina;
-    }
- 
+     
     .cuerpo__tituloserv{
         font-size: 40px ;
     }
@@ -584,6 +502,12 @@ body{
  
     .contenedor__serv--suces{
         width: 60%;
+    }
+
+    .encabezado__logo{
+        display: flex;
+        justify-content: center;
+        height: 100px;
     }
 }
 
