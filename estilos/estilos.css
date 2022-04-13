@@ -145,7 +145,6 @@ body{
     height: 60%;
     width: 70%;
     padding: 20px 20px 50px 50px;
-    margin-left: 400px;  
 }
  
 .contenedor3{
@@ -239,7 +238,7 @@ body{
     }
 }
  
-/*     MEDIA QUERIES       INDEX   TAMANO    CELULAR*/
+/*   MEDIA QUERIES       INDEX   TAMANO    CELULAR       */
  
 @media screen and (max-width:425px) {
     
