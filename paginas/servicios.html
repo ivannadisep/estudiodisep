@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/ACCF749B-BA8A-40F6-AA68-109296FC54BA.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/03884f9323.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
- 
+
 <body class="body">
- 
+
     <div class="containergrid2">
- 
+
         <header class="encabezado">
             <div class="encabezado__logo">
                 <a href="index.html"><img src="../multimedia/ACCF749B-BA8A-40F6-AA68-109296FC54BA.png"
                         class="encabezado__logo" alt=""></a>
             </div>
- 
+
             <div class="titulomenu">
                 <h1 class="encabezado__titulo">Estudio Juridico D'Isep </h1>
- 
- 
-                <nav class="encabezado__menu">
-                    <ul class="encabezado__menu--nav">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a>
-                            <ul class="encabezado__submenu">
-                                <li><a href="servicios.html"></a>Comercial y laboral</li>
-                                <li><a href="servicios.html"></a>Civil</li>
-                                <li><a href="servicios.html"></a>Familia</li>
-                                <li><a href="servicios.html"></a>Sucesiones</li>
+
+
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a6b7c332;">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="servicios.html">Comercial</a></li>
+                                        <li><a class="dropdown-item" href="servicios.html">Familiar</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="servicios.html">Contratos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="contactanos.html">Contactanos</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success"
+                                    style="background-color: rgb(255, 255, 255); color: black;"
+                                    type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
- 
- 
+
+
         <main class="cuerposervicios">
             <div class="contenedor__servgrid">
- 
+
                 <h1 class="cuerpo__tituloserv"> Nuestros servicios</h1>
- 
+
                 <section class="contenedor__serv">
                     <div class="comercialysucesiones">
-                        <div class="contenedor__serv--comerc">
+                        <div  data-aos="flip-left" class="contenedor__serv--comerc">
                             <h2 class="servicios__titulo"> Comercial y laboral</>
                             </h2>
                             <p class="servicios__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -65,9 +97,9 @@
                                 ipsum!
                                 Exercitationem soluta temporibus vel! Culpa!</p>
                         </div>
- 
- 
-                        <div class="contenedor__serv--suces">
+
+
+                        <div  data-aos="flip-left" class="contenedor__serv--suces">
                             <h2 class="servicios__titulo"> Sucesiones</h2>
                             <p class="servicios__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Ipsam
@@ -78,9 +110,9 @@
                                 delectus ab tempora neque modi. Eligendi, facilis?</p>
                         </div>
                     </div>
- 
+
                     <div class="familiaycivil">
-                        <div class="contenedor__serv--flia">
+                        <div  data-aos="flip-left" class="contenedor__serv--flia">
                             <h2 class="servicios__titulo">Familia</h2>
                             <p class="servicios__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
                                 assumenda
@@ -90,8 +122,8 @@
                                 quaerat
                                 ratione adipisci sint.</p>
                         </div>
- 
-                        <div class="contenedor__serv--civ">
+
+                        <div  data-aos="flip-left" class="contenedor__serv--civ">
                             <h2 class="servicios__titulo">Civil</h2>
                             <p class="servicios__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Deleniti
@@ -106,16 +138,18 @@
                 </section>
             </div>
         </main>
- 
- 
- 
+
+
+
         <footer class="piepagina">
             <span class="piepagina__redes">
                 <h3 class="piepagina__redes--titulo">Nuestras redes</h3>
-                <div><a href="https://instagram.com/estudiojuridicodisep?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i>Instagram</a></div>
-                <div><a href="https://www.facebook.com/EstudioJuridicoDisep"><i class="fa-brands fa-facebook"></i>Facebook</a></div>
+                <div><a href="https://instagram.com/estudiojuridicodisep?utm_medium=copy_link"><i
+                            class="fa-brands fa-instagram"></i>Instagram</a></div>
+                <div><a href="https://www.facebook.com/EstudioJuridicoDisep"><i
+                            class="fa-brands fa-facebook"></i>Facebook</a></div>
             </span>
- 
+
             <span class="piepagina__contacto">
                 <h3 class="piepagina__contacto--titulos">Contacto</h3>
                 <div><i class="fa-solid fa-location-dot"></i>Tucuman 149, Planta Baja, Oficina 8</div>
@@ -123,9 +157,12 @@
                 <div><i class="fa-solid fa-phone"></i>+54 9 351 7509758</div>
             </span>
         </footer>
- 
+
     </div>
- 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
- 
+
 </html>

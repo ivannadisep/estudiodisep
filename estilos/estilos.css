@@ -397,7 +397,8 @@ body{
 }
  
 .servicios__titulo{
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
     padding-bottom: 15px;
 }
  
@@ -434,7 +435,7 @@ body{
  
 /*MEDIA QUERIES DE SERVICIOS TAMANO TABLET*/
  
-@media screen and (max-width:768px) {
+@media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -458,11 +459,31 @@ body{
         grid-area: piepagina;
     }
 
+    .contenedor__serv--comerc{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .contenedor__serv--civ{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .contenedor__serv--flia{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .contenedor__serv--suces{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+    }
+
 }
 
 /*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR*/
  
-@media screen and (max-width:425px) {
+@media screen and (max-width:767px) and (min-width:350px) {
     .containergrid2{
         display: grid;
         grid-template-columns: 1fr;
@@ -518,19 +539,23 @@ body{
     }
  
     .contenedor__serv--comerc{
-        width: 60%;
+        width: 80%;
+        padding: 20px 10px 10px 10px;
     }
  
     .contenedor__serv--civ{
-        width: 60%;
+        width: 80%;
+        padding: 20px 0px 0px 0px;
     }
  
     .contenedor__serv--flia{
-        width: 60%;
+        width: 80%;
+        padding: 20px 0px 0px 0px;
     }
  
     .contenedor__serv--suces{
-        width: 60%;
+        width: 80%;
+        padding: 20px 0px 0px 0px;
     }
 }
 

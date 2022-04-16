@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/03884f9323.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
  
  
@@ -48,10 +49,10 @@
                               Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Comercial</a></li>
-                              <li><a class="dropdown-item" href="#">Familiar</a></li>
+                              <li><a class="dropdown-item" href="paginas/servicios.html">Comercial</a></li>
+                              <li><a class="dropdown-item" href="paginas/servicios.html">Familiar</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Contratos</a></li>
+                              <li><a class="dropdown-item" href="paginas/servicios.html">Contratos</a></li>
                             </ul>
                           </li>
                           <li class="nav-item">
@@ -134,7 +135,7 @@
  
                 <section>
  
-                    <span class="contenedor1">
+                    <span data-aos="zoom-out-down" class="contenedor1">
                         <h2 class="principal__titulos1"> Atención personalizada </h2>
                         <p class="principal__parrafos">Cuando nuestros clientes se acercan a consultarnos entendemos que
                             los atraviesa
@@ -147,7 +148,7 @@
                             WhatsApp y                             correo              electrónico.</p>
                     </span>
  
-                    <span class="contenedor2">
+                    <span data-aos="zoom-out-down" class="contenedor2">
                         <h2 class="principal__titulos2">Areas especializadas</h2>
                         <p class="principal__parrafos">Somos un grupo familiar, que desde hace 30 años nos dedicamos a
                             dar
@@ -156,7 +157,7 @@
                             Nuestras areas de especialidad son familia, civil y laboral.</p>
                     </span>
  
-                    <span class="contenedor3">
+                    <span data-aos="zoom-out-down" class="contenedor3">
                         <h2 class="principal__titulos3">Consultas</h2>
                         <p class="principal__parrafos">En una consulta nos encargamos de analizar e interiorizamos con
                             todos
@@ -194,7 +195,11 @@
             </span>
         </footer>
     </div>
- 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
  
 </body>
  
