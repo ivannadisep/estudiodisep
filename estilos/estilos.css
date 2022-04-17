@@ -1051,10 +1051,10 @@ body{
  
  
  
-/* MEDIA QUERIES FAQ PARA TABLES */
+/* MEDIA QUERIES FAQ PARA TABLET */
  
  
-@media screen and (max-width:768px) {
+@media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid5{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1079,6 +1079,10 @@ body{
     .piepagina{
         grid-area: piepagina;
     }
+
+    .pregunta{
+        width: 40%;
+    }
  
    
  
@@ -1092,7 +1096,7 @@ body{
 /*MEDIA QUERIES DE FAQ TAMANO CELULAR*/
  
  
-@media screen and (max-width:480px) {
+@media screen and (max-width:767px) and (min-width:350px) {
     .containergrid5 {
         display: grid;
         grid-template-columns: 1fr;

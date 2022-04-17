@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/ACCF749B-BA8A-40F6-AA68-109296FC54BA.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../estilos/estilos.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/03884f9323.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
  
 <body class="body">
@@ -25,21 +28,50 @@
             <div class="titulomenu">
                 <h1 class="encabezado__titulo">Estudio Juridico D'Isep </h1>
  
-                <nav class="encabezado__menu">
-                    <ul class="encabezado__menu--nav">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a>
-                            <ul class="encabezado__submenu">
-                                <li><a href="servicios.html"></a>Comercial y laboral</li>
-                                <li><a href="servicios.html"></a>Civil</li>
-                                <li><a href="servicios.html"></a>Familia</li>
-                                <li><a href="servicios.html"></a>Sucesiones</li>
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a6b7c332;">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="servicios.html">Comercial</a></li>
+                                        <li><a class="dropdown-item" href="servicios.html">Familiar</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="servicios.html">Contratos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="contactanos.html">Contactanos</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success"
+                                    style="background-color: rgb(255, 255, 255); color: black;"
+                                    type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -51,7 +83,7 @@
  
                 <section>
                     <div class="primeraysegunda">
-                        <div class="pregunta pri">
+                        <div data-aos="flip-left" class="pregunta pri">
                             <h3 class="contenpreg__p">¿Que hago si me solicitan renuncia a traves de telegrama?</h3>
                             <p class="contenpreg__p--rta">Renunciarias a la posibilidad de reclamar irregularidades
                                 laborales e
@@ -60,7 +92,7 @@
                                 sin
                                 antes asesorarte. </p>
                         </div>
-                        <div class="pregunta seg">
+                        <div data-aos="flip-right" class="pregunta seg">
                             <h3 class="contenpreg__p">¿Que hago si solo me despiden de manera verbal?</h3>
                             <p class="contenpreg__p--rta">Un despido verbal no tiene validez alguna, frente a esta
                                 situación, se
@@ -73,7 +105,7 @@
                         </div>
                     </div>
                     <div class="terceraycuarta">
-                        <div class="pregunta tre">
+                        <div data-aos="flip-left" class="pregunta tre">
                             <h3 class="contenpreg__p">¿De cuanto son los honorarios a abonar?</h3>
                             <p class="contenpreg__p--rta">Los honorarios están regulados por ley, se determinan en base
                                 a
@@ -84,7 +116,7 @@
                                 contamos
                                 con facilidades de pago </p>
                         </div>
-                        <div class="pregunta cua">
+                        <div data-aos="flip-right" class="pregunta cua">
                             <h3 class="contenpreg__p">¿Hasta que edad se reclama cuota alimentaria?</h3>
                             <p class="contenpreg__p--rta">Los alimentos son obligatorios hasta los 21 años. No obstante,
                                 la
@@ -118,6 +150,12 @@
         </footer>
  
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
  
 </html>
