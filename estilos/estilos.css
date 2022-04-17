@@ -854,6 +854,11 @@ body{
 .direccion{
     font-size: 25px;
 }
+
+.formrelleno{
+    display: flex;
+    flex-direction: column;
+}
  
  
 /*    GRIDS PARA CONTACTANOS    */
@@ -885,8 +890,8 @@ body{
 /*MEDIA QUERIES DE CONTACTO TAMANO TABLET*/
  
  
- 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid4{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -921,7 +926,7 @@ body{
  
  
  
-@media screen and (max-width:425px) {
+@media screen and (max-width:767px) and (min-width:350px) {
     .containergrid4{
         display: grid;
         grid-template-columns: 1fr;
