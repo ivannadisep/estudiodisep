@@ -598,14 +598,38 @@ body{
 }
  
 .abogado__img--texto{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 50px;
     padding-bottom: 50px;
     font-weight: bold;
     font-size: 20px;
 }
+
+.abogado1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.abogado2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 5%;
+    padding-top: 50px;
+}
  
+.abogado3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .abogado1__img{
     padding: 5px 5px;
     border: solid 5px rgb(9, 9, 85);
@@ -650,7 +674,7 @@ body{
  
 /*MEDIA QUERIES DE NOSOTROS TAMANO TABLET*/
  
-@media screen and (max-width:768px) {
+@media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid3{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -674,12 +698,32 @@ body{
         grid-area: piepagina;
     }
  
+    .abogado1{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .abogado2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .abogado3{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+    }
     
 }
  
 /*MEDIA QUERIES DE NOSOTROS TAMANO CELULAR*/
  
-@media screen and (max-width:425px) {
+@media screen and (max-width:767px) and (min-width:350px) {
     .containergrid3 {
         display: grid;
         grid-template-columns: 1fr;
@@ -713,19 +757,43 @@ body{
         padding-left: 20px;
         padding-right: 20px;
     }
- 
+
     .abogado1__img{
         width: 60%;
     }
- 
+
     .abogado2__img{
         width: 60%;
     }
- 
+
     .abogado3__img{
         width: 60%;
     }
  
+    .abogado1{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .abogado2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0%;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .abogado3{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+        padding: 0%;
+    }
+
     .nosotros__titulo--historia{
         font-size: 15px;
     }
