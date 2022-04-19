@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+ 
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:rgb(255, 255, 255);
+    color: rgb(9, 9, 85);
+    width: auto;
+}
+ 
+
+.encabezado{
+    background: rgb(255,255,255);
+    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    .encabezado__logo{
+    display: flex;
+    padding: 15px  20px 30px 0px;
+    height: 150px;
+    margin-left: 60px;
+    }
+    .titulomenu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    gap: 10px;}
+        .titulomenu .encabezado__titulo{
+        font-size: 40px;
+        } 
+}
+
+.piepagina{
+    background: rgb(255,255,255);
+    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+}
+ 
+ 
+ 
+/*         INDEX CODIGO         */
+ 
+/*GRIDS*/
+ 
+.containergrid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "encabezado encabezado encabezado encabezado"
+    "grid grid grid grid"
+    "piepagina piepagina piepagina piepagina"
+}
+ 
+.encabezado{
+    grid-area: encabezado;
+}
+ 
+.principalgrid{
+    grid-area: grid;
+}
+ 
+.piepagina{
+    grid-area: piepagina;
+}
+ 
+/*    CODIGO  INDEX    */  
+ 
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .carousel{
+    padding-top: 20px;
+    }
+    .principal__texto{
+    padding-bottom: 30px;
+    }
+        .principal__texto .principal__titulo{
+        font-size: 60px;
+        padding: 30px 30px;
+        border-top: solid rgb(255, 255, 255) 2px;
+        }
+        .principal__texto .principal__parrafo{
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px 20px;
+        }
+    .contenedor1{
+    display: flex;
+    gap: 20px;
+    border-left: solid;
+    border-top: solid;
+    height: 60%;
+    width: 80%;
+    padding: 20px 20px 50px 50px;
+    margin-left: 50px;
+    margin-bottom: 10%;
+    }
+        .contenedor1 .principal__parrafos{
+        padding-top: 5px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: start;
+        }
+        .contenedor1 .principal__titulos1{
+        font-size: 25px;
+        }
+    .contenedor2{
+    display: flex;
+    gap: 20px;
+    border-right: solid;
+    border-top: solid;
+    height: 60%;
+    width: 70%;
+    padding: 20px 20px 50px 50px;
+    margin-left: 200px;  
+    margin-bottom: 10%;
+    }
+        .contenedor2 .principal__parrafos{
+        padding-top: 5px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: start;
+        }
+        .contenedor2 .principal__titulos2{
+        font-size: 25px;
+        }
+    
+    .contenedor3{
+    display: flex;
+    gap: 20px;
+    border-left: solid;
+    border-top: solid;
+    height: 60%;
+    width: 80%;
+    padding: 20px 20px 0px 50px;
+    margin-left: 50px;
+    margin-bottom: 5%;
+    }
+        .contenedor3 .principal__parrafos{
+        padding-top: 5px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: start;
+        }
+        .contenedor3 .principal__titulos3{
+        font-size: 25px;
+        }
+}
+
+
+ 
+/*    MEDIA QUERIES  INDEX  TAMANO TABLET    */
+ 
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .containergrid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "encabezado encabezado encabezado"
+        "grid grid grid"
+        "piepagina piepagina piepagina"
+    }
+     
+    .encabezado{
+        grid-area: encabezado;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;    
+        .encabezado__logo{
+            display: flex;
+            justify-content: flex-start;
+            height: 130px;
+            margin-left: 25px;
+        }
+        .titulomenu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        }
+            .titulomenu .encabezado__titulo{
+            display: flex;
+            font-size: 25px;
+            }
+    
+    }
+    
+    .principalgrid{
+        grid-area: grid;} 
+        .principalgrid .principal .contenedor2{
+        margin-left: 20%;
+        }
+        .principalgrid .principal .carousel{
+        display: none;
+        }
+
+
+    .piepagina{
+        grid-area: piepagina;
+        font-size: 15px;
+    }
+}
+     
+ 
+/*     MEDIA QUERIES       INDEX   TAMANO    CELULAR*/
+ 
+@media screen and (max-width:767px) and (min-width:350px) {
+    .containergrid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "encabezado"
+        "grid"
+        "piepagina"
+    }
+   
+    .encabezado{
+        grid-area: encabezado;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .encabezado__logo{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 15px;
+        height: 120px;
+        }
+        .titulomenu{
+            display: flex;
+            font-size: 15px;
+            align-items: center;
+        }   
+            .titulomenu .encabezado__titulo{
+            display: flex;
+            font-size: 30px;
+            justify-content: center;
+            }
+    }
+     
+    .principalgrid{
+        grid-area: grid;}
+        .principal{
+            .principal .principal__texto
+            .principal__parrafo{
+            font-size: 15px;
+            }
+            .principal__titulo{
+            font-size: 40px;
+            }
+        .carousel{
+        display: none;
+        }  
+        .contenedor1{
+        display: flex;
+        flex-direction: column;
+        }
+            .contenedor1 .principal__parrafos{
+            font-size: 15px;
+            }
+            .contenedor1 .principaltitulos1{
+            font-size: 15px;
+            }
+        .contenedor2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        }
+            .contenedor2 .principaltitulos2{
+            font-size: 15px;
+            }
+            .contenedor2 .principal__parrafos{
+                font-size: 15px;
+                }
+        .contenedor3{
+        display: flex;
+        flex-direction: column;
+        }
+            .contenedor3 .principaltitulos3{
+            font-size: 15px;
+            }
+            .contenedor3 .principal__parrafos{
+            font-size: 15px;
+            } 
+        
+    } 
+    .piepagina{
+        grid-area: piepagina;  
+        font-size: 15px;
+    }   
+}
