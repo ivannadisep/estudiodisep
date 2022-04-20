@@ -1,3 +1,6 @@
+@import "header";
+@import "footer";
+
 *{
     margin: 0;
     padding: 0%;
@@ -8,44 +11,6 @@ body{
     background-color:rgb(255, 255, 255);
     color: rgb(9, 9, 85);
     width: auto;
-}
- 
-
-.encabezado{
-    background: rgb(255,255,255);
-    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 200px;
-    .encabezado__logo{
-    display: flex;
-    padding: 15px  20px 30px 0px;
-    height: 150px;
-    margin-left: 60px;
-    }
-    .titulomenu{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;   
-    font-family: 'Noto Serif', serif;
-    padding-bottom: 20px;
-    gap: 10px;}
-        .titulomenu .encabezado__titulo{
-        font-size: 40px;
-        } 
-}
-
-.piepagina{
-    background: rgb(255,255,255);
-    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-weight: bold;
 }
  
  
