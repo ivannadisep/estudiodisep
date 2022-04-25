@@ -1,5 +1,9 @@
 @import "header";
 @import "footer";
+@import "contactanos";
+@import "faq";
+@import "servicios";
+@import "sobre-nosotros";
 
 *{
     margin: 0;
@@ -92,11 +96,10 @@ body{
     border-right: solid;
     border-top: solid;
     height: 60%;
-    width: 70%;
+    width: 80%;
     padding: 20px 20px 50px 50px;
-    margin-left: 200px;  
+    margin-left: 50px;
     margin-bottom: 10%;
-    }
         .contenedor2 .principal__parrafos{
         padding-top: 5px;
         line-height: 30px;
@@ -115,9 +118,9 @@ body{
     border-top: solid;
     height: 60%;
     width: 80%;
-    padding: 20px 20px 0px 50px;
+    padding: 20px 20px 50px 50px;
     margin-left: 50px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     }
         .contenedor3 .principal__parrafos{
         padding-top: 5px;
@@ -228,15 +231,15 @@ body{
     }
      
     .principalgrid{
-        grid-area: grid;}
+        grid-area: grid;
         .principal{
             .principal .principal__texto
             .principal__parrafo{
             font-size: 15px;
             }
             .principal__titulo{
-            font-size: 40px;
-            }
+            font-size: 40px;}
+        }
         .carousel{
         display: none;
         }  
@@ -271,12 +274,9 @@ body{
             .contenedor3 .principal__parrafos{
             font-size: 15px;
             } 
-        
-    } 
+         
     .piepagina{
         grid-area: piepagina;  
         font-size: 15px;
-    }   
+    }
 }
-
-

@@ -1,0 +1,9 @@
+$contactodirecto:
+( whatsapp: #128C7E, 
+telegram: #229ED9, 
+mensaje: white, ); 
+
+@each $contactodirecto, $color in $contactodirecto{ 
+    .a--#{$contactodirecto} 
+    { background-color: $color; } 
+}
