@@ -1,7 +1,6 @@
 $contactodirecto:
 ( whatsapp: #128C7E, 
-telegram: #229ED9, 
-mensaje: white, ); 
+facebook: #229ED9, ); 
 
 @each $contactodirecto, $color in $contactodirecto{ 
     .a--#{$contactodirecto} 

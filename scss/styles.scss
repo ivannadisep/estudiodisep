@@ -1,9 +1,6 @@
 @import "header";
-@import "footer";
 @import "contactanos";
-@import "faq";
-@import "servicios";
-@import "sobre-nosotros";
+@import "footer";
 
 *{
     margin: 0;
@@ -69,73 +66,10 @@ body{
         font-weight: normal;
         padding: 20px 20px;
         }
-    .contenedor1{
-    display: flex;
-    gap: 20px;
-    border-left: solid;
-    border-top: solid;
-    height: 60%;
-    width: 80%;
-    padding: 20px 20px 50px 50px;
-    margin-left: 50px;
-    margin-bottom: 10%;
-    }
-        .contenedor1 .principal__parrafos{
-        padding-top: 5px;
-        line-height: 30px;
-        font-weight: bold;
-        font-size: 20px;
-        text-align: start;
-        }
-        .contenedor1 .principal__titulos1{
-        font-size: 25px;
-        }
-    .contenedor2{
-    display: flex;
-    gap: 20px;
-    border-right: solid;
-    border-top: solid;
-    height: 60%;
-    width: 80%;
-    padding: 20px 20px 50px 50px;
-    margin-left: 50px;
-    margin-bottom: 10%;
-        .contenedor2 .principal__parrafos{
-        padding-top: 5px;
-        line-height: 30px;
-        font-weight: bold;
-        font-size: 20px;
-        text-align: start;
-        }
-        .contenedor2 .principal__titulos2{
-        font-size: 25px;
-        }
-    
-    .contenedor3{
-    display: flex;
-    gap: 20px;
-    border-left: solid;
-    border-top: solid;
-    height: 60%;
-    width: 80%;
-    padding: 20px 20px 50px 50px;
-    margin-left: 50px;
-    margin-bottom: 10%;
-    }
-        .contenedor3 .principal__parrafos{
-        padding-top: 5px;
-        line-height: 30px;
-        font-weight: bold;
-        font-size: 20px;
-        text-align: start;
-        }
-        .contenedor3 .principal__titulos3{
-        font-size: 25px;
-        }
 }
 
 
- 
+
 /*    MEDIA QUERIES  INDEX  TAMANO TABLET    */
  
 @media screen and (max-width:1023px) and (min-width:768px) {
@@ -145,9 +79,8 @@ body{
         grid-template-areas:
         "encabezado encabezado encabezado"
         "grid grid grid"
-        "piepagina piepagina piepagina"
-    }
-     
+        "piepagina piepagina piepagina"}
+        
     .encabezado{
         grid-area: encabezado;
         height: 250px;
@@ -155,7 +88,7 @@ body{
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content:center;
-        align-items: center;    
+        align-items: center;}    
         .encabezado__logo{
             display: flex;
             justify-content: flex-start;
@@ -173,8 +106,6 @@ body{
             font-size: 25px;
             }
     
-    }
-    
     .principalgrid{
         grid-area: grid;} 
         .principalgrid .principal .contenedor2{
@@ -184,16 +115,8 @@ body{
         display: none;
         }
 
-
-    .piepagina{
-        grid-area: piepagina;
-        font-size: 15px;
-    }
-}
-     
- 
+} 
 /*     MEDIA QUERIES       INDEX   TAMANO    CELULAR*/
- 
 @media screen and (max-width:767px) and (min-width:350px) {
     .containergrid1 {
         display: grid;
@@ -202,81 +125,109 @@ body{
         grid-template-areas:
         "encabezado"
         "grid"
-        "piepagina"
-    }
-   
+        "piepagina"}
+        
     .encabezado{
         grid-area: encabezado;
         height: 280px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;
+        justify-content:center;
+        align-items: center; }   
         .encabezado__logo{
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 15px;
-        height: 120px;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 15px;
+            height: 120px
         }
         .titulomenu{
-            display: flex;
-            font-size: 15px;
-            align-items: center;
-        }   
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center
+        }
             .titulomenu .encabezado__titulo{
             display: flex;
-            font-size: 30px;
-            justify-content: center;
+            font-size: 25px;
             }
-    }
-     
+
+
     .principalgrid{
-        grid-area: grid;
+    grid-area: grid;}
         .principal{
-            .principal .principal__texto
             .principal__parrafo{
             font-size: 15px;
             }
             .principal__titulo{
             font-size: 40px;}
-        }
-        .carousel{
-        display: none;
-        }  
-        .contenedor1{
-        display: flex;
-        flex-direction: column;
-        }
-            .contenedor1 .principal__parrafos{
-            font-size: 15px;
+            .carousel{
+            display: none;}  
+        
+            .contenedor1{
+            display: flex;
+            flex-direction: column;
             }
-            .contenedor1 .principaltitulos1{
-            font-size: 15px;
-            }
-        .contenedor2{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10%;
-        }
-            .contenedor2 .principaltitulos2{
-            font-size: 15px;
-            }
-            .contenedor2 .principal__parrafos{
+                .contenedor1 .principal__parrafos{
                 font-size: 15px;
                 }
-        .contenedor3{
+                .contenedor1 .principaltitulos1{
+                font-size: 15px;
+                }
+            .contenedor2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            }
+                .contenedor2 .principaltitulos2{
+                font-size: 15px;
+                }
+                .contenedor2 .principal__parrafos{
+                @extend .principal__parrafos;
+                }
+                .contenedor3{
+                display: flex;
+                flex-direction: column;
+                }
+                .contenedor3 .principaltitulos3{
+                font-size: 15px;
+                }
+                .contenedor3 .principal__parrafos{
+                @extend .principal__parrafos;
+                } 
+        } 
+    .piepagina{
         display: flex;
         flex-direction: column;
-        }
-            .contenedor3 .principaltitulos3{
-            font-size: 15px;
-            }
-            .contenedor3 .principal__parrafos{
-            font-size: 15px;
-            } 
-         
-    .piepagina{
         grid-area: piepagina;  
         font-size: 15px;
     }
 }
+
+
+@mixin contenedor123 ($mnlf) {
+    display: flex;
+    width: 80%;
+    height: 60%;
+    gap: 20px;
+    padding: 20px 20px 50px 50px;
+    border-top: solid;
+    font-weight: bold;
+    margin-left: $mnlf}    
+    
+    .contenedor1{
+        @include contenedor123 (5rem);
+        padding-bottom: 100px;
+        border-left: solid}
+    
+    
+    .contenedor2{
+        @include contenedor123 (50px);
+        border-right: solid;
+        padding-bottom: 5%}
+       
+        
+    .contenedor3{
+        @include contenedor123(5rem);
+        border-left: solid}
