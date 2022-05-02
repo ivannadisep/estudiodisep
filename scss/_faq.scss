@@ -154,14 +154,8 @@
             width: 70%;
             }
         .terceraycuarta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+        @extend .primeraysegunda;
         }
-            .pregunta{
-            width: 70%;
-            }
  
     .piepagina{
         grid-area: piepagina;  

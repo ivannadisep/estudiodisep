@@ -730,8 +730,6 @@
     flex-direction: column;
     align-items: center;
     gap: 30px; }
-  .pregunta {
-    width: 70%; }
   .piepagina {
     grid-area: piepagina; } }
 
