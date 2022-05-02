@@ -9,29 +9,26 @@
     flex-wrap: wrap;
     text-align: center;
 }
- 
-.titulofaq{
+    .titulofaq{
     font-size: 60px;
     padding: 20px 20px;
     font-weight: bold;
-}
- 
-.primeraysegunda{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
- 
-.terceraycuarta{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-}
+    }
+        .primeraysegunda{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        }
+        .terceraycuarta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        }
  
  
 .pregunta{
@@ -41,15 +38,15 @@
     border: solid 5px rgb(9, 9, 85);
     line-height: 30px;
 }
- 
-.contenpreg__p--rta{
+    .contenpreg__p{
+    font-size: 25px;
+    }
+    .contenpreg__p--rta{
     padding-top: 20px;
     font-size: 20px;
-}
+    }
  
-.contenpreg__p{
-    font-size: 25px;
-}
+
  
 /*   GRIDS FAQ     */
  
@@ -101,22 +98,19 @@
         display: flex;
         justify-content: center;
     }
-         
+        .titulofaq{
+        font-size: 60px;
+        padding: 20px 20px;
+        text-align: center;
+        }
+        .pregunta{
+        width: 40%;
+        }
+    
     .piepagina{
         grid-area: piepagina;
     }
 
-    .pregunta{
-        width: 40%;
-    }
- 
-   
- 
-    .titulofaq{
-        font-size: 60px;
-        padding: 20px 20px;
-        text-align: center;
-    }
 }
  
 /*MEDIA QUERIES DE FAQ TAMANO CELULAR*/
@@ -135,46 +129,42 @@
    
     .encabezado{
         grid-area: encabezado;
- 
     }
+        .encabezado__logo{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 10px;
+        }
+ 
      
     .containerpreg{
         grid-area: preguntas;
         grid-column: 1/2;
     }
+        .titulofaq{
+        font-size: 40px;
+        }
+        .primeraysegunda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        }
+            .pregunta{
+            width: 70%;
+            }
+        .terceraycuarta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        }
+            .pregunta{
+            width: 70%;
+            }
  
     .piepagina{
         grid-area: piepagina;  
     }
- 
-    
-       
-    .pregunta{
-    width: 70%;
-    }
- 
-    .primeraysegunda{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
- 
-    .terceraycuarta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
- 
-    .encabezado__logo{
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 10px;
-    }
- 
-    .titulofaq{
-        font-size: 40px;
-    }
- 
+        
 }

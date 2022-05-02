@@ -247,6 +247,12 @@
   padding: 20px 20px;
   font-weight: bold; }
 
+.abogado1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 5%; }
+
 .abogado__img--texto {
   padding-left: 50px;
   padding-right: 50px;
@@ -255,11 +261,9 @@
   font-weight: bold;
   font-size: 20px; }
 
-.abogado1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-left: 5%; }
+.abogado1__img {
+  padding: 5px 5px;
+  border: solid 5px #090955; }
 
 .abogado2 {
   display: flex;
@@ -268,6 +272,10 @@
   margin-right: 5%;
   padding-top: 50px; }
 
+.abogado2__img {
+  padding: 5px 5px;
+  border: solid 5px #090955; }
+
 .abogado3 {
   display: flex;
   flex-direction: row;
@@ -275,14 +283,6 @@
   margin-left: 5%;
   padding-top: 50px;
   padding-bottom: 50px; }
-
-.abogado1__img {
-  padding: 5px 5px;
-  border: solid 5px #090955; }
-
-.abogado2__img {
-  padding: 5px 5px;
-  border: solid 5px #090955; }
 
 .abogado3__img {
   padding: 5px 5px;
@@ -354,35 +354,35 @@
   .introduccion {
     padding-left: 20px;
     padding-right: 20px; }
-  .abogado1__img {
-    width: 60%; }
-  .abogado2__img {
-    width: 60%; }
-  .abogado3__img {
-    width: 60%; }
   .abogado1 {
     display: flex;
     flex-direction: column;
     margin: 0%;
     align-items: center;
     padding: 0%; }
+  .abogado1__img {
+    width: 60%; }
+  .abogado__img--texto {
+    font-size: 15px; }
   .abogado2 {
     display: flex;
     flex-direction: column-reverse;
     margin: 0%;
     align-items: center;
     padding: 0%; }
+  .abogado2__img {
+    width: 60%; }
   .abogado3 {
     display: flex;
     flex-direction: column;
     margin: 0%;
     align-items: center;
     padding: 0%; }
-  .nosotros__titulo--historia {
-    font-size: 15px; }
+  .abogado3__img {
+    width: 60%; }
   .nosotros__titulo {
     font-size: 30px; }
-  .abogado__img--texto {
+  .nosotros__titulo--historia {
     font-size: 15px; } }
 
 .piepagina {
@@ -654,12 +654,12 @@
   border: solid 5px #090955;
   line-height: 30px; }
 
+.contenpreg__p {
+  font-size: 25px; }
+
 .contenpreg__p--rta {
   padding-top: 20px;
   font-size: 20px; }
-
-.contenpreg__p {
-  font-size: 25px; }
 
 /*   GRIDS FAQ     */
 .containergrid5 {
@@ -691,14 +691,14 @@
     grid-column: 1 / 4;
     display: flex;
     justify-content: center; }
-  .piepagina {
-    grid-area: piepagina; }
-  .pregunta {
-    width: 40%; }
   .titulofaq {
     font-size: 60px;
     padding: 20px 20px;
-    text-align: center; } }
+    text-align: center; }
+  .pregunta {
+    width: 40%; }
+  .piepagina {
+    grid-area: piepagina; } }
 
 /*MEDIA QUERIES DE FAQ TAMANO CELULAR*/
 @media screen and (max-width: 767px) and (min-width: 350px) {
@@ -709,29 +709,31 @@
     grid-template-areas: "encabezado" "preguntas" "piepagina"; }
   .encabezado {
     grid-area: encabezado; }
+  .encabezado__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px; }
   .containerpreg {
     grid-area: preguntas;
     grid-column: 1/2; }
-  .piepagina {
-    grid-area: piepagina; }
-  .pregunta {
-    width: 70%; }
+  .titulofaq {
+    font-size: 40px; }
   .primeraysegunda {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px; }
+  .pregunta {
+    width: 70%; }
   .terceraycuarta {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px; }
-  .encabezado__logo {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px; }
-  .titulofaq {
-    font-size: 40px; } }
+  .pregunta {
+    width: 70%; }
+  .piepagina {
+    grid-area: piepagina; } }
 
 * {
   margin: 0;
