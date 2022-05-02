@@ -1,8 +1,163 @@
-$contactodirecto:
-( whatsapp: #128C7E, 
-facebook: #229ED9, ); 
+ @import "header";
+ @import "footer";
 
-@each $contactodirecto, $color in $contactodirecto{ 
-    .a--#{$contactodirecto} 
-    { background-color: $color; } 
+
+
+.contenedorform{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    .formrelleno{
+    display: flex;
+    flex-direction: column;
+    }
+        .caso{
+        font-weight: bold;
+        font-size: 20px;
+        }
+ 
+.cuerpo__titulocontacto{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 20px;
+}
+ 
+.datos{
+    font-weight: bold;
+    font-size: 20px;
+}
+ 
+.boton{
+    padding-top: 20px;
+}
+ 
+.contenedormapa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.titulomapa{
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.direccion{
+    font-size: 25px;
+}
+
+
+ 
+/*    GRIDS PARA CONTACTANOS     */
+ 
+.containergrid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "encabezado encabezado encabezado encabezado"
+    "contacto contacto contacto contacto"
+    "piepagina piepagina piepagina piepagina";
+}
+     
+.encabezado{
+    grid-area: encabezado;
+}
+     
+.cuerpocontacto{
+    grid-area: contacto;
+    grid-column: 1 / 5;
+}
+     
+.piepagina{
+    grid-area: piepagina;
+}
+ 
+ 
+/*MEDIA QUERIES DE CONTACTO TAMANO TABLET  */
+ 
+ 
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .containergrid4{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "encabezado encabezado encabezado"
+        "contacto contacto contacto"
+        "piepagina piepagina piepagina";
+    }
+         
+    .encabezado{
+        grid-area: encabezado;
+    }
+         
+    .cuerpocontacto{
+        grid-area: contacto;
+        grid-column: 1 / 4;
+    }
+         
+    .piepagina{
+        grid-area: piepagina;
+    }
+ 
+      
+    .titulocontacto{
+        text-align: center;
+    }
+ 
+}
+ 
+/*MEDIA QUERIES DE CONTACTANOS TAMANO CELULAR */
+ 
+ 
+ 
+@media screen and (max-width:767px) and (min-width:350px) {
+    .containergrid4{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "encabezado"
+        "contacto"
+        "piepagina";
+    }
+   
+    .encabezado{
+        grid-area: encabezado;
+    }
+ 
+    .cuerpocontacto{
+        grid-area: contacto;
+        grid-column: 1 / 2;
+    }
+         
+    .piepagina{
+        grid-area: piepagina;
+    }
+ 
+    
+    .contenedorform{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }   
+ 
+    .titulocontacto{
+        font-size: 17px;
+        padding: 20px 20px;
+    }
+        .cuerpo__titulocontacto{
+            font-size: 30px;
+        }
+
+    .contenedormapa{
+        display: none;
+    }
 }

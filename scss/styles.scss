@@ -1,13 +1,16 @@
 @import "header";
 @import "contactanos";
 @import "footer";
+@import "sobre-nosotros";
+@import "servicios";
+@import "faq";
 
 *{
     margin: 0;
     padding: 0%;
 }
  
-body{
+.body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color:rgb(255, 255, 255);
     color: rgb(9, 9, 85);

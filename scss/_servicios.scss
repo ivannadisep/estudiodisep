@@ -1,0 +1,224 @@
+@import "footer";
+@import "header";
+
+
+/*   CSS    SERVICIOS    */
+ 
+ 
+.cuerpo__tituloserv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 50px;
+}
+ 
+
+.comercialysucesiones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    }
+    .contenedor__serv--comerc{
+    height: 60%;
+    width: 30%;
+    border: solid 5px rgb(9, 9, 85);
+    padding: 50px 50px;
+    text-align: center;
+    background-image: url(../multimedia/comercial.jpg);
+    }
+    .contenedor__serv--suces{
+    height: 60%;
+    width: 30%;
+    border: solid 5px rgb(9, 9, 85);
+    padding: 50px 50px;
+    text-align: center;
+    background-image: url(../multimedia/sucesiones.jpg);
+    }
+ 
+
+.familiaycivil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    .contenedor__serv--flia{
+    height: 60%;
+    width: 30%;
+    border: solid 5px rgb(9, 9, 85);
+    padding: 50px 50px;
+    text-align: center;
+    background-image: url(../multimedia/flia.jpg);
+    }
+    .contenedor__serv--civ{
+    height: 60%;
+    width: 30%;
+    border: solid 5px rgb(9, 9, 85);
+    padding: 50px 50px;
+    text-align: center;
+    background-image: url(../multimedia/civil.jpg);
+    }
+ 
+ 
+ 
+.servicios__titulo{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+ 
+.servicios__parrafo{
+    font-size: 20px;
+    font-weight: bolder;
+}
+ 
+ 
+/*    GRIDS SERVICIOS     */
+ 
+.containergrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "encabezado encabezado encabezado encabezado"
+    "servicios servicios servicios servicios"
+    "piepagina piepagina piepagina piepagina";
+}
+     
+.encabezado{
+    grid-area: encabezado;
+}
+     
+.cuerposervicios{
+    grid-area: servicios;
+    grid-column: 1 / 5;
+}
+     
+.piepagina{
+    grid-area: piepagina;
+}
+ 
+/*MEDIA QUERIES DE SERVICIOS TAMANO TABLET*/
+ 
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .containergrid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "encabezado encabezado encabezado"
+        "servicios servicios servicios"
+        "piepagina piepagina piepagina";
+    }
+         
+    .encabezado{
+        grid-area: encabezado;
+    }
+         
+    .cuerposervicios{
+        grid-area: servicios;
+        grid-column: 1 / 4;
+        }
+        .contenedor__serv--comerc{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+        }
+    
+        .contenedor__serv--civ{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+        }
+
+        .contenedor__serv--flia{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+        }
+
+        .contenedor__serv--suces{
+        width: 40%;
+        padding: 20px 0px 0px 0px;
+        }
+
+    .piepagina{
+        grid-area: piepagina;
+    }
+
+    
+}
+
+/*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR*/
+ 
+@media screen and (max-width:767px) and (min-width:350px) {
+    .containergrid2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "encabezado"
+        "servicios"
+        "piepagina";
+    }
+         
+    .encabezado{
+        grid-area: encabezado;
+    }
+         
+    .cuerposervicios{
+        grid-area: servicios;
+        grid-column: 1 / 2;
+    }
+        .contenedor__servgrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+            .comercialysucesiones{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            }
+                .contenedor__serv--comerc{
+                width: 80%;
+                padding: 20px 10px 10px 10px;
+                }
+                .contenedor__serv--suces{
+                width: 80%;
+                padding: 20px 0px 0px 0px;
+                }
+            .familiaycivil{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            }
+                .contenedor__serv--civ{
+                width: 80%;
+                padding: 20px 0px 0px 0px;
+                }
+                .contenedor__serv--flia{
+                width: 80%;
+                padding: 20px 0px 0px 0px;
+                }
+        
+    .piepagina{
+        grid-area: piepagina;
+    }
+ 
+    .cuerpo__tituloserv{
+        font-size: 40px ;
+    }
+  
+    .servicios__parrafo{
+        font-size: 20px;
+    }
+ 
+    .servicios__titulo{
+        font-size: 25px;
+    }
+        
+}

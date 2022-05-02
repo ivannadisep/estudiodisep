@@ -20,11 +20,27 @@
   .encabezado .titulomenu .encabezado__titulo {
     font-size: 40px; }
 
-.a--whatsapp {
-  background-color: #128C7E; }
-
-.a--facebook {
-  background-color: #229ED9; }
+.encabezado {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px; }
+  .encabezado .encabezado__logo {
+    display: flex;
+    padding: 15px  20px 30px 0px;
+    height: 150px;
+    margin-left: 60px; }
+  .encabezado .titulomenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    gap: 10px; }
+  .encabezado .titulomenu .encabezado__titulo {
+    font-size: 40px; }
 
 .piepagina {
   background: white;
@@ -44,11 +60,684 @@
     flex-direction: column;
     font-size: 15px; } }
 
+.contenedorform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.formrelleno {
+  display: flex;
+  flex-direction: column; }
+
+.caso {
+  font-weight: bold;
+  font-size: 20px; }
+
+.cuerpo__titulocontacto {
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 20px; }
+
+.datos {
+  font-weight: bold;
+  font-size: 20px; }
+
+.boton {
+  padding-top: 20px; }
+
+.contenedormapa {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+
+.titulomapa {
+  padding-top: 50px;
+  font-size: 30px; }
+
+.direccion {
+  font-size: 25px; }
+
+/*    GRIDS PARA CONTACTANOS     */
+.containergrid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "contacto contacto contacto contacto" "piepagina piepagina piepagina piepagina"; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.cuerpocontacto {
+  grid-area: contacto;
+  grid-column: 1 / 5; }
+
+.piepagina {
+  grid-area: piepagina; }
+
+/*MEDIA QUERIES DE CONTACTO TAMANO TABLET  */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .containergrid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado" "contacto contacto contacto" "piepagina piepagina piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerpocontacto {
+    grid-area: contacto;
+    grid-column: 1 / 4; }
+  .piepagina {
+    grid-area: piepagina; }
+  .titulocontacto {
+    text-align: center; } }
+
+/*MEDIA QUERIES DE CONTACTANOS TAMANO CELULAR */
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .containergrid4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "contacto" "piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerpocontacto {
+    grid-area: contacto;
+    grid-column: 1 / 2; }
+  .piepagina {
+    grid-area: piepagina; }
+  .contenedorform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+    padding-bottom: 20px; }
+  .titulocontacto {
+    font-size: 17px;
+    padding: 20px 20px; }
+  .cuerpo__titulocontacto {
+    font-size: 30px; }
+  .contenedormapa {
+    display: none; } }
+
+.piepagina {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold; }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .piepagina {
+    grid-area: piepagina;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+.encabezado {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px; }
+  .encabezado .encabezado__logo {
+    display: flex;
+    padding: 15px  20px 30px 0px;
+    height: 150px;
+    margin-left: 60px; }
+  .encabezado .titulomenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    gap: 10px; }
+  .encabezado .titulomenu .encabezado__titulo {
+    font-size: 40px; }
+
+.piepagina {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold; }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .piepagina {
+    grid-area: piepagina;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+.introduccion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px; }
+
+.nosotros__titulo {
+  font-size: 60px;
+  padding: 20px 20px;
+  font-weight: bold; }
+
+.nosotros__titulo--historia {
+  line-height: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 20px; }
+
+.sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.equipo {
+  font-size: 40px;
+  padding: 20px 20px;
+  font-weight: bold; }
+
+.abogado__img--texto {
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 20px; }
+
+.abogado1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 5%; }
+
+.abogado2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 5%;
+  padding-top: 50px; }
+
+.abogado3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.abogado1__img {
+  padding: 5px 5px;
+  border: solid 5px #090955; }
+
+.abogado2__img {
+  padding: 5px 5px;
+  border: solid 5px #090955; }
+
+.abogado3__img {
+  padding: 5px 5px;
+  border: solid 5px #090955; }
+
+/* GRIDS PARA SOBRE NOSOTROS */
+.containergrid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "presentacion presentacion presentacion presentacion" "piepagina piepagina piepagina piepagina"; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.cuerponosotros {
+  grid-area: presentacion;
+  grid-column: 1 / 5; }
+
+.piepagina {
+  grid-area: piepagina; }
+
+/*MEDIA QUERIES DE NOSOTROS TAMANO TABLET*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .containergrid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado" "presentacion presentacion presentacion" "piepagina piepagina piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerponosotros {
+    grid-area: presentacion;
+    grid-column: 1 / 4; }
+  .piepagina {
+    grid-area: piepagina; }
+  .abogado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: center; }
+  .abogado2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0%;
+    align-items: center; }
+  .abogado3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: center; } }
+
+/*MEDIA QUERIES DE NOSOTROS TAMANO CELULAR*/
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .containergrid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "nosotros" "piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerponosotros {
+    grid-area: nosotros;
+    grid-column: 1/2; }
+  .piepagina {
+    grid-area: piepagina; }
+  .abogado__img--texto {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .introduccion {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .abogado1__img {
+    width: 60%; }
+  .abogado2__img {
+    width: 60%; }
+  .abogado3__img {
+    width: 60%; }
+  .abogado1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: center;
+    padding: 0%; }
+  .abogado2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0%;
+    align-items: center;
+    padding: 0%; }
+  .abogado3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: center;
+    padding: 0%; }
+  .nosotros__titulo--historia {
+    font-size: 15px; }
+  .nosotros__titulo {
+    font-size: 30px; }
+  .abogado__img--texto {
+    font-size: 15px; } }
+
+.piepagina {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold; }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .piepagina {
+    grid-area: piepagina;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+.encabezado {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px; }
+  .encabezado .encabezado__logo {
+    display: flex;
+    padding: 15px  20px 30px 0px;
+    height: 150px;
+    margin-left: 60px; }
+  .encabezado .titulomenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    gap: 10px; }
+  .encabezado .titulomenu .encabezado__titulo {
+    font-size: 40px; }
+
+/*   CSS    SERVICIOS    */
+.cuerpo__tituloserv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 50px; }
+
+.comercialysucesiones {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 50px; }
+
+.contenedor__serv--comerc {
+  height: 60%;
+  width: 30%;
+  border: solid 5px #090955;
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url(../multimedia/comercial.jpg); }
+
+.contenedor__serv--suces {
+  height: 60%;
+  width: 30%;
+  border: solid 5px #090955;
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url(../multimedia/sucesiones.jpg); }
+
+.familiaycivil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.contenedor__serv--flia {
+  height: 60%;
+  width: 30%;
+  border: solid 5px #090955;
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url(../multimedia/flia.jpg); }
+
+.contenedor__serv--civ {
+  height: 60%;
+  width: 30%;
+  border: solid 5px #090955;
+  padding: 50px 50px;
+  text-align: center;
+  background-image: url(../multimedia/civil.jpg); }
+
+.servicios__titulo {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px; }
+
+.servicios__parrafo {
+  font-size: 20px;
+  font-weight: bolder; }
+
+/*    GRIDS SERVICIOS     */
+.containergrid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "servicios servicios servicios servicios" "piepagina piepagina piepagina piepagina"; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.cuerposervicios {
+  grid-area: servicios;
+  grid-column: 1 / 5; }
+
+.piepagina {
+  grid-area: piepagina; }
+
+/*MEDIA QUERIES DE SERVICIOS TAMANO TABLET*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .containergrid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado" "servicios servicios servicios" "piepagina piepagina piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerposervicios {
+    grid-area: servicios;
+    grid-column: 1 / 4; }
+  .contenedor__serv--comerc {
+    width: 40%;
+    padding: 20px 0px 0px 0px; }
+  .contenedor__serv--civ {
+    width: 40%;
+    padding: 20px 0px 0px 0px; }
+  .contenedor__serv--flia {
+    width: 40%;
+    padding: 20px 0px 0px 0px; }
+  .contenedor__serv--suces {
+    width: 40%;
+    padding: 20px 0px 0px 0px; }
+  .piepagina {
+    grid-area: piepagina; } }
+
+/*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR*/
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .containergrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "servicios" "piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .cuerposervicios {
+    grid-area: servicios;
+    grid-column: 1 / 2; }
+  .contenedor__servgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .comercialysucesiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .contenedor__serv--comerc {
+    width: 80%;
+    padding: 20px 10px 10px 10px; }
+  .contenedor__serv--suces {
+    width: 80%;
+    padding: 20px 0px 0px 0px; }
+  .familiaycivil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .contenedor__serv--civ {
+    width: 80%;
+    padding: 20px 0px 0px 0px; }
+  .contenedor__serv--flia {
+    width: 80%;
+    padding: 20px 0px 0px 0px; }
+  .piepagina {
+    grid-area: piepagina; }
+  .cuerpo__tituloserv {
+    font-size: 40px; }
+  .servicios__parrafo {
+    font-size: 20px; }
+  .servicios__titulo {
+    font-size: 25px; } }
+
+.piepagina {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold; }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .piepagina {
+    grid-area: piepagina;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+.encabezado {
+  background: white;
+  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px; }
+  .encabezado .encabezado__logo {
+    display: flex;
+    padding: 15px  20px 30px 0px;
+    height: 150px;
+    margin-left: 60px; }
+  .encabezado .titulomenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    gap: 10px; }
+  .encabezado .titulomenu .encabezado__titulo {
+    font-size: 40px; }
+
+/*       CODIGO SOBRE    FAQ        */
+.containerpreg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.titulofaq {
+  font-size: 60px;
+  padding: 20px 20px;
+  font-weight: bold; }
+
+.primeraysegunda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 30px; }
+
+.terceraycuarta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px; }
+
+.pregunta {
+  padding: 30px 30px;
+  height: 60%;
+  width: 30%;
+  border: solid 5px #090955;
+  line-height: 30px; }
+
+.contenpreg__p--rta {
+  padding-top: 20px;
+  font-size: 20px; }
+
+.contenpreg__p {
+  font-size: 25px; }
+
+/*   GRIDS FAQ     */
+.containergrid5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "preguntas preguntas preguntas preguntas" "piepagina piepagina piepagina piepagina"; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.containerpreg {
+  grid-area: preguntas; }
+
+.piepagina {
+  grid-area: piepagina; }
+
+/* MEDIA QUERIES FAQ PARA TABLET */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .containergrid5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado encabezado" "preguntas preguntas preguntas" "piepagina piepagina piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .containerpreg {
+    grid-area: preguntas;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center; }
+  .piepagina {
+    grid-area: piepagina; }
+  .pregunta {
+    width: 40%; }
+  .titulofaq {
+    font-size: 60px;
+    padding: 20px 20px;
+    text-align: center; } }
+
+/*MEDIA QUERIES DE FAQ TAMANO CELULAR*/
+@media screen and (max-width: 767px) and (min-width: 350px) {
+  .containergrid5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado" "preguntas" "piepagina"; }
+  .encabezado {
+    grid-area: encabezado; }
+  .containerpreg {
+    grid-area: preguntas;
+    grid-column: 1/2; }
+  .piepagina {
+    grid-area: piepagina; }
+  .pregunta {
+    width: 70%; }
+  .primeraysegunda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+  .terceraycuarta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; }
+  .encabezado__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px; }
+  .titulofaq {
+    font-size: 40px; } }
+
 * {
   margin: 0;
   padding: 0%; }
 
-body {
+.body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: white;
   color: #090955;

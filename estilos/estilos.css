@@ -1,47 +1,8 @@
-
-.encabezado{
-    background: rgb(255,255,255);
-    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 200px;
+*{
+    margin: 0;
+    padding: 0%;
 }
  
-.encabezado__logo{
-    display: flex;
-    padding: 15px  20px 30px 0px;
-    height: 150px;
-    margin-left: 60px;
-}
- 
-.titulomenu{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;   
-    font-family: 'Noto Serif', serif;
-    padding-bottom: 20px;
-    gap: 10px;
-}
-
-.encabezado__titulo{
-    font-size: 40px;
-}
- 
-
-.piepagina{
-    background: rgb(255,255,255);
-    background: linear-gradient(104deg, rgba(255,255,255,1) 0%, rgba(26,56,106,0.8855917366946778) 67%);
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-weight: bold;
-}
- 
-
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color:rgb(255, 255, 255);
@@ -49,8 +10,9 @@ body{
     width: auto;
 }
  
- 
-/*   CSS    SERVICIOS   */
+
+
+/*   CSS    SERVICIOS    
  
  
 .cuerpo__tituloserv{
@@ -126,7 +88,7 @@ body{
 }
  
  
-/*    GRIDS SERVICIOS     */
+/*    GRIDS SERVICIOS     
  
 .containergrid2{
     display: grid;
@@ -151,8 +113,7 @@ body{
     grid-area: piepagina;
 }
  
-/*MEDIA QUERIES DE SERVICIOS TAMANO TABLET  */
-
+/*MEDIA QUERIES DE SERVICIOS TAMANO TABLET
  
 @media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid2{
@@ -200,7 +161,7 @@ body{
 
 }
 
-/*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR  */
+/*    MEDIA QUERIES DE SERVICIOS TAMANO CELULAR
  
 @media screen and (max-width:767px) and (min-width:350px) {
     .containergrid2{
@@ -279,7 +240,7 @@ body{
 }
 
 
-/*           CODIGO SOBRE NOSOTROS      */
+/*           CODIGO SOBRE NOSOTROS     
  
  
  
@@ -365,7 +326,7 @@ body{
 }
  
  
-/* GRIDS PARA SOBRE NOSOTROS   */
+/* GRIDS PARA SOBRE NOSOTROS 
  
 .containergrid3{
     display: grid;
@@ -391,7 +352,7 @@ body{
 }
  
  
-/*MEDIA QUERIES DE NOSOTROS TAMANO TABLET  */
+/*MEDIA QUERIES DE NOSOTROS TAMANO TABLET
  
 @media screen and (max-width:1023px) and (min-width:768px) {
     .containergrid3{
@@ -440,7 +401,7 @@ body{
     
 }
  
-/*MEDIA QUERIES DE NOSOTROS TAMANO CELULAR  */
+/*MEDIA QUERIES DE NOSOTROS TAMANO CELULAR
  
 @media screen and (max-width:767px) and (min-width:350px) {
     .containergrid3 {
@@ -528,7 +489,7 @@ body{
 
 }
 
-/*      CODIGO SOBRE   CONTACTANOS        */
+    CODIGO SOBRE   CONTACTANOS      
  
  
 .contenedorform{
@@ -580,7 +541,7 @@ body{
 }
  
  
-/*    GRIDS PARA CONTACTANOS     */
+/*    GRIDS PARA CONTACTANOS    
  
 .containergrid4{
     display: grid;
@@ -606,7 +567,7 @@ body{
 }
  
  
-/*MEDIA QUERIES DE CONTACTO TAMANO TABLET  */
+/*MEDIA QUERIES DE CONTACTO TAMANO TABLET
  
  
 
@@ -641,8 +602,7 @@ body{
  
 }
  
-/*MEDIA QUERIES DE CONTACTANOS TAMANO CELULAR */
- 
+/*MEDIA QUERIES DE CONTACTANOS TAMANO CELULAR* 
  
  
 @media screen and (max-width:767px) and (min-width:350px) {
@@ -693,7 +653,7 @@ body{
 }
 
 
-/*       CODIGO SOBRE    FAQ         */
+/*       CODIGO SOBRE    FAQ        
  
 .containerpreg{
     display: flex;
@@ -744,7 +704,7 @@ body{
     font-size: 25px;
 }
  
-/*   GRIDS FAQ      */
+/*   GRIDS FAQ     
  
 .containergrid5{
     display: grid;
@@ -770,7 +730,7 @@ body{
  
  
  
-/* MEDIA QUERIES FAQ PARA TABLET  */
+/* MEDIA QUERIES FAQ PARA TABLET 
  
  
 @media screen and (max-width:1023px) and (min-width:768px) {
@@ -812,7 +772,7 @@ body{
     }
 }
  
-/*MEDIA QUERIES DE FAQ TAMANO CELULAr  */
+/*MEDIA QUERIES DE FAQ TAMANO CELULAR
  
  
 @media screen and (max-width:767px) and (min-width:350px) {
