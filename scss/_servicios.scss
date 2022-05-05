@@ -130,15 +130,18 @@
         }
     
         .contenedor__serv--civ{
-        @extend .contenedor__serv--comerc;
+            width: 40%;
+            padding: 20px 0px 0px 0px;
         }
 
         .contenedor__serv--flia{
-        @extend .contenedor__serv--comerc;
+            width: 40%;
+            padding: 20px 0px 0px 0px;
         }
 
         .contenedor__serv--suces{
-        @extend .contenedor__serv--comerc;
+            width: 40%;
+            padding: 20px 0px 0px 0px;
         }
 
     .piepagina{
@@ -188,13 +191,18 @@
                 padding: 20px 0px 0px 0px;
                 }
             .familiaycivil{
-            @extend .comercialysucesiones;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;;
             }
                 .contenedor__serv--civ{
-                @extend .contenedor__serv--suces;
+                    width: 80%;
+                    padding: 20px 0px 0px 0px;
                 }
                 .contenedor__serv--flia{
-                @extend .contenedor__serv--suces;
+                    width: 80%;
+                    padding: 20px 0px 0px 0px;
                 }
         
     .piepagina{
