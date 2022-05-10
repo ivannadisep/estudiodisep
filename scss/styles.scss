@@ -6,7 +6,7 @@
 @import "faq";
 
 *{
-    margin: 0;
+    margin: 0%;
     padding: 0%;
 }
  
@@ -59,18 +59,21 @@
     .principal__texto{
     padding-bottom: 30px;
     }
-        .principal__texto .principal__titulo{
+        .principal__titulo{
         font-size: 60px;
         padding: 30px 30px;
         border-top: solid rgb(255, 255, 255) 2px;
         }
-        .principal__texto .principal__parrafo{
+        .principal__parrafo{
         font-size: 20px;
         font-weight: normal;
         padding: 20px 20px;
         }
 }
 
+.contenedor1 {
+        font-size: 20px;
+    }
 
 
 /*    MEDIA QUERIES  INDEX  TAMANO TABLET    */
@@ -111,14 +114,11 @@
     
     .principalgrid{
         grid-area: grid;} 
-        .principalgrid .principal .contenedor2{
-        margin-left: 20%;
-        }
         .principalgrid .principal .carousel{
         display: none;
         }
-
-} 
+}
+ 
 /*     MEDIA QUERIES       INDEX   TAMANO    CELULAR*/
 @media screen and (max-width:767px) and (min-width:350px) {
     .containergrid1 {
@@ -151,10 +151,11 @@
         font-size: 15px;
         align-items: center
         }
-            .titulomenu .encabezado__titulo{
+            .encabezado__titulo{
             display: flex;
-            font-size: 25px;
+            font-size: 25px
             }
+
 
 
     .principalgrid{
