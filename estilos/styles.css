@@ -217,7 +217,7 @@
 .nosotros__titulo {
   font-size: 60px;
   padding: 20px 20px;
-  font-weight: bold; }
+  font-weight: normal; }
 
 .nosotros__titulo--historia {
   line-height: 50px;
@@ -622,7 +622,7 @@
 .titulofaq {
   font-size: 60px;
   padding: 20px 20px;
-  font-weight: bold; }
+  font-weight: normal; }
 
 .primeraysegunda {
   display: flex;
@@ -630,14 +630,17 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 50px;
-  margin-top: 30px; }
+  margin-top: 30px; 
+  font-weight: bold;
+}
 
 .terceraycuarta {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 30px; }
+  margin-bottom: 30px; 
+  font-weight: bold;}
 
 .pregunta {
   padding: 30px 30px;
