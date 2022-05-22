@@ -1,24 +1,3 @@
-.encabezado {
-  background: white;
-  background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 200px; }
-  .encabezado .encabezado__logo {
-    display: flex;
-    padding: 15px  20px 30px 0px;
-    height: 150px;
-   }
-  .encabezado .titulomenu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Noto Serif', serif;
-    padding-bottom: 20px;
-    gap: 10px; }
-  .encabezado .titulomenu .encabezado__titulo {
-    font-size: 30px; }
 
 .encabezado {
   background: white;
@@ -41,6 +20,9 @@
     gap: 10px; }
   .encabezado .titulomenu .encabezado__titulo {
     font-size: 40px; }
+  .encabezado .titulomenu .container-fluid{
+    font-size: 20px;
+  }
 
 .piepagina {
   background: white;
@@ -185,7 +167,7 @@
     flex-direction: column;
     font-size: 15px; } }
 
-.encabezado {
+  .encabezado {
   background: white;
   background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
   display: flex;
@@ -405,9 +387,9 @@
     grid-area: piepagina;
     display: flex;
     flex-direction: column;
-    font-size: 15px; } }
+    font-size: 15px; }  }
 
-.encabezado {
+  .encabezado {
   background: white;
   background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
   display: flex;
@@ -606,8 +588,7 @@
     display: flex;
     flex-direction: column;
     font-size: 15px; } }
-
-.encabezado {
+  .encabezado {
   background: white;
   background: linear-gradient(104deg, white 0%, rgba(26, 56, 106, 0.885592) 67%);
   display: flex;
@@ -628,6 +609,7 @@
     gap: 10px; }
   .encabezado .titulomenu .encabezado__titulo {
     font-size: 30px; }
+
 
 /*       CODIGO SOBRE    FAQ        */
 .containerpreg {
@@ -793,7 +775,7 @@
     padding: 30px 30px;
     border-top: solid white 2px; }
   .principal .principal__texto .principal__parrafo {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
     padding: 20px 20px; }
 
@@ -891,7 +873,8 @@
     display: flex;
     flex-direction: column;
     grid-area: piepagina;
-    font-size: 15px; } }
+    font-size: 15px; }
+}
 
 .contenedor1 {
   display: flex;
@@ -903,7 +886,8 @@
   font-weight: bold;
   margin-left: 5rem;
   padding-bottom: 100px;
-  border-left: solid; }
+  border-left: solid;
+  font-size: 20px; }
 
 .contenedor2 {
   display: flex;
@@ -915,7 +899,8 @@
   font-weight: bold;
   margin-left: 50px;
   border-right: solid;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  font-size: 20px; }
 
 .contenedor3 {
   display: flex;
@@ -926,4 +911,5 @@
   border-top: solid;
   font-weight: bold;
   margin-left: 5rem;
-  border-left: solid; }
+  border-left: solid;
+  font-size: 20px; }
